@@ -2,12 +2,17 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@700&display=swap');
 
+    :root {
+        --first-color: #ff4c68;
+        --second-color: #ef8172;
+    }
+
     body {  
         font-family: 'Montserrat' !important;
     }
 
     #title{
-        background-color: #ff4c68;
+        background-color: var(--first-color);
     }
 
     .container-fluid{
@@ -86,12 +91,12 @@
     }
 
     .icon{
-        color: #ef8172;
+        color: var(--second-color);
         margin-bottom: 1rem;
     }
 
     .icon:hover{
-        color: #ff4c68;
+        color: var(--first-color);
     }
 
 
@@ -100,7 +105,7 @@
 #testimonials{
     padding: 7% 15%;
     text-align: center;
-    background-color: #ef8172;
+    background-color: var(--second-color);
     color: #fff;
 }
 
@@ -130,7 +135,7 @@ h2 {
 }
 
 #press{ 
-    background-color: #ef8172;
+    background-color: var(--second-color);
     text-align: center;
     padding-bottom: 3%;
 }
@@ -167,7 +172,7 @@ h2 {
 /* CTA */
 
 section#cta {
-    background: #ff4c68;
+    background: var(--first-color);
     padding: 7% 15%;
     text-align: center;
 }
